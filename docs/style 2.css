@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins",sans-serif;   
+}
+
+a, a:hover{
+    /* text-decoration: none; */
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background-color: dodgerblue;
+}
+
+.top-bar span{
+    color: #fff;
+}
+
+.top-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.top-bar li{
+    margin: 0px 5px;
+}
+
+.top-bar a:hover{
+    color: #222;
+}
+
+.logo img{
+    width: 99px;
+    margin-right: 10px;
+}
+.logo {
+    flex:1;
+    user-select: none;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo a:hover{
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav ul{
+    background-color:mediumslateblue;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: aliceblue;
+}
+
+nav li{
+    padding: 1rem;
+    list-style-type: none;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.toggle{
+    font-size: 30px;
+    display:none;
+}
+
+.menu:hover{
+    background-color: blueviolet;
+}
+
+
+
+nav form{
+    display:flex;
+    height: 40px;
+    background:;
+    min-width: 15%!important;
+    border: 2px solid rgba(15, 15, 15, 0.2);
+    border-radius: 2px;
+    padding: 2px;
+}
+nav form .search{
+    height: 100%;
+    width: 100%;
+    padding: 0 1px;
+    color: whitesmoke;
+    background: none;
+    border: 1px;
+    font-weight: 400;
+    font-size: 21px;
+    
+}
+nav form button{
+    padding: 0 15px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    font-size: 21px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+
+@media (max-width:600px){
+    .nav ul{
+        flex-wrap: wrap;
+       }
+    .toggle{
+        display: block;
+    }
+    .menu{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    body{
+        background-color: #2c3e50;
+    } 
+
+    .active{
+        display: block;
+    }
+    
+}

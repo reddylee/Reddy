@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can.Do.So</title>
+    <link rel="icon" href="/img/CanDoSo_logo.png" type="image/x-icon">
+    <title>Responsive Flexbox Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type-"text/javascript" src="script.js" defer></script>
+    </script>
+    <style>
+        main {
+            letter-spacing: 0.05em;
+            line-height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/index.html"><img src="/img/CanDoSo_logo.png" alt="logo" /></a>
+        </div>
+        <div class="toggle" <a href="#">
+            <ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="/home.html">Home</a>
+            </li>
+            <li>
+                <a href="/Political_Science.html">Political Science</a>
+            </li>
+            <li>
+                <a href="/Economics.html">Economics</a>
+            </li>
+            <li>
+                <a href="/Mathematics.html">Mathematics</a>
+            </li>
+            <li>
+                <a href="/R_programming.html">R</a>
+            </li>
+            <li class="active">
+                <a href="/Blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="/about.html">About Me</a>
+            </li>
+        </ul>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).on('click', 'ul li', function () {
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+        </script>
+    </nav>
+    <form action="#">
+        <input type="search" class="search" placeholder="Search" required>
+        <button type="submit" class="button"><a href="#">
+                <ion-icon name="search-outline"></ion-icon>
+            </a></button>
+    </form>
+    <main>
+        <article>
+            <h1><strong>Welcome To Can.Do.So!</strong></h1>
+            <br>
+
+            <p><strong>This is a free land for learning. Please join us right away.</strong></p>
+            <p><strong><em>Just Enjoy!</em></strong></p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, earum architecto dolorem dolore ad enim
+                perferendis, deserunt dolorum a maiores totam illum aspernatur placeat sit suscipit nihil. Ea, laborum
+                ut.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda temporibus quisquam libero laborum
+                accusamus. Minus ea magnam error voluptatum, excepturi aut tempore. Saepe, cum sit sequi inventore
+                reprehenderit fuga numquam.</p>
+        </article>
+        <div class="soa">
+            <!-- <img src="/img/sa3.jpeg" alt="School_of_Athens"> -->
+            <br>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; Copyright 2014-2022. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

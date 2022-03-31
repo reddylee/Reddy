@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Can.Do.So</title>
+  <link rel="icon" href="/img/CanDoSo_logo.png" type="image/x-icon">
+  <title>Responsive Flexbox Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script type-"text/javascript" src="script.js" defer></script>
+  </script>
+  <style>
+    main{
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a href="/index.html"><img src="/img/gengdushe.png" alt="logo" /></a>
+    </div>
+    <div class="toggle" <a href="#">
+      <ion-icon name="menu-outline"></ion-icon></a>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="/首页.html">首 页</a>
+      </li>
+      <li>
+        <a href="/政治学.html">政治学</a>
+      </li>
+      <li class="active">
+        <a href="/经济学.html">经济学</a>
+      </li>
+      <li>
+        <a href="/数学.html">数 学</a>
+      </li>
+      <li>
+        <a href="/R语言.html">R 语言</a>
+      </li>
+      <li>
+        <a href="/博客.html">博 客</a>
+      </li>
+    
+      <li>
+        <a href="/关于本站.html">关于本站</a>
+      </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).on('click', 'ul li', function () {
+        $(this).addClass('active').siblings().removeClass('active')
+      })
+    </script>
+  </nav>
+  <form action="#">
+    <input type="search" class="search" placeholder="Search" required>
+    <button type="submit" class="button"><a href="#">
+        <ion-icon name="search-outline"></ion-icon>
+      </a></button>
+  </form>
+  <main>
+    <article>
+      <h1><strong>欢迎访问耕读社!</strong></h1>
+      
+      
+      <p><strong>这是一个自由的学习园地。赶快加入我们吧！</strong></p>
+      <p><strong><em>开始畅游吧！</em></strong></p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, earum architecto dolorem dolore ad enim
+        perferendis, deserunt dolorum a maiores totam illum aspernatur placeat sit suscipit nihil. Ea, laborum ut.
+      </p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda temporibus quisquam libero laborum
+        accusamus. Minus ea magnam error voluptatum, excepturi aut tempore. Saepe, cum sit sequi inventore reprehenderit
+        fuga numquam.</p>
+    </article>
+    <div class="soa">
+      <!-- <img src="/img/sa3.jpeg" alt="School_of_Athens"> -->
+      <br>
+    </div>
+  </main>
+  <hr>
+  <footer>
+    <h3>&copy; Copyright 2014-2022. All Rights Reserved.</h3>
+  </footer>
+</body>
+
+</html>

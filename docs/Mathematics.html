@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Can.Do.So</title>
+  <link rel="icon" href="/img/CanDoSo_logo.png" type="image/x-icon">
+  <title>Responsive Flexbox Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script type-"text/javascript" src="script.js" defer></script>
+  </script>
+  <style>
+    *{
+      box-sizing: border-box
+    }
+
+    main{
+    letter-spacing: 0.05em;
+    line-height: 40px;
+    }
+
+    .child{
+      border: 1px solid blue;
+      }
+    @media (min-width: 768px) {
+      .parent{
+      display: flex;
+      }
+    }
+    body{
+      background-color: cornflowerblue;
+      color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a href="/index.html"><img src="/img/CanDoSo_logo.png" alt="logo" /></a>
+    </div>
+    <div class="toggle" <a href="#">
+      <ion-icon name="menu-outline"></ion-icon></a>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="/home.html">Home</a>
+      </li>
+      <li>
+        <a href="/Political_Science.html">Political Science</a>
+      </li>
+      <li>
+        <a href="/Economics.html">Economics</a>
+      </li>
+      <li class="active">
+        <a href="/Mathematics.html">Mathematics</a>
+      </li>
+      <li>
+        <a href="/R_programming.html">R</a>
+      </li>
+      <li>
+        <a href="/Blog.html">Blog</a>
+      </li>
+      
+      <li>
+        <a href="/About.html">About Me</a>
+      </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).on('click', 'ul li', function () {
+        $(this).addClass('active').siblings().removeClass('active')
+      })
+    </script>
+  </nav>
+  <form action="#">
+    <input type="search" class="search" placeholder="Search" required>
+    <button type="submit" class="button"><a href="#">
+        <ion-icon name="search-outline"></ion-icon>
+      </a></button>
+  </form>
+  <main>
+    <h1><strong>Best Mathematic Videos Ever!</strong></h1>
+    <br>
+    <section class="parent">
+      
+      <section class="child">
+        
+        <p> 1. Essence of calculus</p>
+        
+          <iframe width="650" height="450" src="https://www.youtube.com/embed/WUvTyaaNkzM" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </section>
+        <section class="child">
+        <p>2. Essence of linear algebra</p>
+        <iframe width="650" height="450" src="https://www.youtube.com/embed/fNk_zzaMoSs" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </section>
+    </section>
+    <br>
+  <h2>Please visit <a href="https://www.youtube.com/c/3blue1brown">3Blue1Brown</a> for more excellent videos.</h2>
+  </main>
+  <hr>
+  <footer>
+    <p>&copy; Copyright 2014-2022. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
